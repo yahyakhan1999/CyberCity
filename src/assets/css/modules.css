@@ -1,0 +1,108 @@
+.new-window {
+    position: absolute;
+    top: 80px;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background: transparent;
+}
+
+.module-window {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, #3498db, #9b59b6);
+    border: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    /* Animation */
+    animation: fadeInAndZoom 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes fadeInAndZoom  {
+    0% {
+        transform: scale(0.75);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.back-button {
+    position: absolute;
+    padding: 0.25%;
+    width: 120px;
+    height: 68px;
+    top: 0;
+    left: 0;
+}
+
+.next-button {
+    position: absolute;
+    padding: 0.25%;
+    width: 120px;
+    height: 68px;
+    top: 0;
+    right: 0;
+}
+
+.slide-back-button {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    padding: 15px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(219, 193, 108);
+    font-family: 'Press Start 2P Regular', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    cursor: pointer;
+    box-shadow: inset 0 -8px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.middle-position {
+    position: absolute;
+    width: 25%;
+    bottom: 30%;
+    left: 37.5%;
+    z-index: 50;
+}
+
+.middle-position-bigger {
+    position: absolute;
+    width: 35%;
+    bottom: 50%;
+    left: 30.5%;
+    z-index: 50;
+}
+
+.move-left-and-up {
+    left: 27%;
+    width: 22%;
+    bottom: 35%;
+}
+
+.move-right-and-up {
+    left: 50%;
+    width: 22%;
+    bottom: 35%;
+}
+
+.speaking-character {
+    position: absolute;
+    width: 15%;
+    bottom: 5%;
+    left: 10%;
+}

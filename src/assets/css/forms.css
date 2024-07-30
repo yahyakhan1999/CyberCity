@@ -1,0 +1,114 @@
+.add-bottom-margin {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 3s;
+}
+
+@keyframes collapse {
+  from {max-height: 100px;}
+  to {max-height: 0;}
+}
+
+.collapse {
+  animation-name: collapse;
+  animation-duration: 0.5s;
+  overflow: hidden;
+}
+
+.lr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will cover the full height of the viewport */
+  position: relative;
+  top:0;
+  z-index: 1; /* Ensure the form appears above the background */
+}
+
+.lr-form {
+  display: flex;
+   position: absolute;
+  flex-direction: column;
+  width: 300px; /* Adjust as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.lr-form input {
+  margin-bottom: 10px;
+  top:0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /* This will make the input fields take up the full width of the form */
+  box-sizing: border-box; /* This includes padding and border in the element's total width and height */
+}
+
+.lr-form button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #32323a;
+  color: white;
+  cursor: pointer;
+  width: auto; /* This will make the button only as wide as its content */
+  align-self: flex-end; /* This will align the button to the start of the flex container */
+}
+
+.lr-form .guestButton{
+  margin: auto;
+  background-color: navy;
+}
+
+.logo-class {
+  margin-bottom: 35px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 0.8em; /* Adjust this value to change the font size */
+  color: darkgrey; /* Adjust this value to change the color */
+}
+
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container.error input {
+  border-color: red;
+}
+
+.input-container.error input:focus {
+  border-color: red;
+  outline-color: red;
+}
+
+.password-errors {
+  color: red;
+  font-size: small;
+}
